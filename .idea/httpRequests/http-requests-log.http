@@ -1,0 +1,409 @@
+GET http://127.0.0.1:3333/api/goods/
+
+<> 2022-01-02T012030.200.json
+
+###
+
+GET http://127.0.0.1:3333/api/goods/
+
+<> 2022-01-02T011336.200.json
+
+###
+
+GET http://127.0.0.1:3333/api/good/
+
+<> 2022-01-02T011319.404.html
+
+###
+
+GET http://127.0.0.1:3333/api/good/
+
+<> 2022-01-02T010918.404.html
+
+###
+
+GET http://127.0.0.1:3333/api/good/
+
+<> 2022-01-02T114530.200.json
+
+###
+
+GET http://127.0.0.1:3333/api/good/
+
+<> 2022-01-02T114524.200.json
+
+###
+
+GET http://127.0.0.1:3333/api/good/
+
+###
+
+GET http://127.0.0.1:3333/api/good/
+
+<> 2022-01-02T114507.200.json
+
+###
+
+GET http://127.0.0.1:3333/api/good/
+
+<> 2022-01-02T114353.200.json
+
+###
+
+GET http://127.0.0.1:3333/api/good/
+
+###
+
+GET http://127.0.0.1:3333/api/good/
+
+<> 2022-01-02T114350.200.html
+
+###
+
+GET http://127.0.0.1:3333/api/good/
+
+<> 2022-01-02T114301.200.html
+
+###
+
+GET http://127.0.0.1:3333/api/good/
+
+<> 2022-01-02T114257.200.html
+
+###
+
+GET http://127.0.0.1:3333/api/good/
+
+<> 2022-01-02T114149.200.html
+
+###
+
+GET http://127.0.0.1:3333/good/
+
+<> 2022-01-02T114141.404.html
+
+###
+
+GET http://127.0.0.1:3333/api/good/1
+Authorization: "bearer NQ.cGbI5FoJIWJ2oxhF1dPvyrVKhrPay7Un-Q0jWE_Z6N1JzUQdg-_ReW27UdII"
+
+<> 2022-01-02T104759.200.html
+
+###
+
+GET http://127.0.0.1:3333/api/good/1
+
+Authorization: "bearer NQ.cGbI5FoJIWJ2oxhF1dPvyrVKhrPay7Un-Q0jWE_Z6N1JzUQdg-_ReW27UdII"
+
+<> 2022-01-02T104753.200.html
+
+###
+
+GET http://127.0.0.1:3333/api/good/1
+Authorization: "bearer NQ.cGbI5FoJIWJ2oxhF1dPvyrVKhrPay7Un-Q0jWE_Z6N1JzUQdg-_ReW27UdII"
+
+<> 2022-01-02T104611.200.html
+
+###
+
+GET http://127.0.0.1:3333/api/good/1
+"Authorization": "bearer NQ.cGbI5FoJIWJ2oxhF1dPvyrVKhrPay7Un-Q0jWE_Z6N1JzUQdg-_ReW27UdII"
+
+###
+
+GET http://127.0.0.1:3333/api/good/1
+Authorization: "bearer NQ.cGbI5FoJIWJ2oxhF1dPvyrVKhrPay7Un-Q0jWE_Z6N1JzUQdg-_ReW27UdII"
+
+<> 2022-01-02T104558.200.html
+
+###
+
+GET http://127.0.0.1:3333/good/1
+Authorization: "bearer NQ.cGbI5FoJIWJ2oxhF1dPvyrVKhrPay7Un-Q0jWE_Z6N1JzUQdg-_ReW27UdII"
+
+<> 2022-01-02T104550.404.html
+
+###
+
+GET http://127.0.0.1:3333/good/1
+Content-Type: application/json
+
+{
+  "token":"NQ.cGbI5FoJIWJ2oxhF1dPvyrVKhrPay7Un-Q0jWE_Z6N1JzUQdg-_ReW27UdII"
+}
+
+<> 2022-01-02T103408.200.html
+
+###
+
+GET http://127.0.0.1:3333/good/1
+Content-Type: application/json
+{:
+  "token": "NQ.cGbI5FoJIWJ2oxhF1dPvyrVKhrPay7Un-Q0jWE_Z6N1JzUQdg-_ReW27UdII"
+}:
+
+###
+
+GET http://127.0.0.1:3333/good/1
+{:
+  "token": "NQ.cGbI5FoJIWJ2oxhF1dPvyrVKhrPay7Un-Q0jWE_Z6N1JzUQdg-_ReW27UdII"
+}:
+
+###
+
+GET http://127.0.0.1:3333/good/1
+{:
+  "token": "NQ.cGbI5FoJIWJ2oxhF1dPvyrVKhrPay7Un-Q0jWE_Z6N1JzUQdg-_ReW27UdII"
+}:
+
+###
+
+GET http://127.0.0.1:3333/good/1
+
+<> 2022-01-02T102910.200.html
+
+###
+
+GET http://127.0.0.1:3333/good/1
+
+###
+
+GET http://127.0.0.1:3333/good/1
+
+###
+
+GET http://127.0.0.1:3333/good/1
+
+<> 2022-01-02T102908.200.json
+
+###
+
+GET http://127.0.0.1:3333/good/1
+
+<> 2022-01-02T102844.200.json
+
+###
+
+GET http://127.0.0.1:3333/good/
+
+<> 2022-01-02T102838.200.html
+
+###
+
+POST http://127.0.0.1:3333/login
+Content-Type: application/json; charset=utf-8
+
+{
+  "uid":"tuxiao1",
+  "password":"12312312311"
+}
+
+<> 2022-01-02T102813.200.json
+
+###
+
+POST http://127.0.0.1:3333/login
+Content-Type: application/json; charset=utf-8
+
+{
+  "name":"tuxiao1",
+  "password":"12312312311"
+}
+
+<> 2022-01-02T102805.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+Content-Type: application/json; charset=utf-8
+
+{
+  "name":"tuxiao1",
+  "password":"12312312311"
+}
+
+<> 2022-01-02T102754.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+Content-Type: application/json; charset=utf-8
+
+{
+  "name":"tuxiao1",
+  "password":"12312312311"
+}
+
+<> 2022-01-02T102752.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+application/json; charset=utf-8:
+{:
+  "name": "tuxiao1",
+  "password": "12312312311"
+}:
+
+###
+
+POST http://127.0.0.1:3333/login
+application/json; charset=utf-8:
+{:
+  "name": "tuxiao1",
+  "password": "12312312311"
+}:
+
+###
+
+POST http://127.0.0.1:3333/login
+application/json; charset=utf-8:
+
+{
+  "name":"tuxiao1",
+  "password":"12312312311"
+}
+
+###
+
+POST http://127.0.0.1:3333/login
+
+{
+  "name":"tuxiao1",
+  "password":"12312312311"
+}
+
+<> 2022-01-02T102703.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+
+{
+  "name":"tuxiao1",
+  "password":"12312312311"
+}
+
+<> 2022-01-02T102700.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+Content-Type: application/json
+
+{
+  "name":"tuxiao1",
+  "password":"12312312311"
+}
+
+<> 2022-01-02T102656.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+Content-Type: application/json
+
+{
+  "name":"tuxiao1",
+  "password":"12312312311"
+}
+
+<> 2022-01-02T102654.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+Content-Type: application/json
+
+{
+  "name":"tuxiao1",
+  "password":"tuxiao11"
+}
+
+<> 2022-01-02T102626.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+Content-Type: application/json
+
+{
+  "name":"tuxiao1",
+  "password":"tuxiao11"
+}
+
+<> 2022-01-02T102621.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+Content-Type: application/json
+
+{
+  "name":"tuxiao1",
+  "password":"tuxiao11"
+}
+
+<> 2022-01-02T102620.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+
+{
+  "name":"tuxiao1",
+  "password":"tuxiao11"
+}
+
+<> 2022-01-02T102512.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+Content-Type: application/json
+
+{
+  "name":"tuxiao1",
+  "password":"tuxiao11"
+}
+
+<> 2022-01-02T102509.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+Content-Type: application/json
+
+{
+  "name":"tuxiao1",
+  "password":"tuxiao11"
+}
+
+<> 2022-01-02T102507.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+Content-Type: application/json
+
+{
+  "name":"tuxiao",
+  "password":"11"
+}
+
+<> 2022-01-02T102430.200.txt
+
+###
+
+POST http://127.0.0.1:3333/login
+Content-Type: application/json
+
+{
+  "name":"tuxiao123",
+  "password":"tuxiaotuxiao"
+}
+
+<> 2022-01-02T102259.200.txt
+
+###
+

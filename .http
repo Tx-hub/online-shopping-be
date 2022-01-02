@@ -1,0 +1,32 @@
+
+###
+GET http://127.0.0.1:3333/api/good/1
+Authorization: "bearer NQ.cGbI5FoJIWJ2oxhF1dPvyrVKhrPay7Un-Q0jWE_Z6N1JzUQdg-_ReW27UdII"
+
+###
+GET http://127.0.0.1:3333/api/goods/
+###
+POST http://127.0.0.1:3333/good/show_by_name
+Content-Type: application/json
+
+{
+  "name":"hel"
+}
+
+###
+POST http://127.0.0.1:3333/user/create
+Content-Type: application/json
+
+{
+  "name":"tuxiao",
+  "password":"tuxiao"
+}
+
+###
+POST http://127.0.0.1:3333/login
+Content-Type: application/json; charset=utf-8
+
+{
+  "uid":"tuxiao1",
+  "password":"12312312311"
+}

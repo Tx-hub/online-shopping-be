@@ -1,0 +1,13 @@
+<h1>
+我的商城
+
+</h1>
+<ul>
+@each(good in goods)
+<li><input type="checkbox" name="checkBoxTest" value={{good.id}} />{{good.name}}</li>
+@endeach
+<button type="button">
+  {{ text }}
+</button>
+</ul>
+
