@@ -11,6 +11,9 @@ export default class Payment extends BaseModel {
   @column()
   public gid: number
 
+  @column()
+  public paynum: number
+
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
 

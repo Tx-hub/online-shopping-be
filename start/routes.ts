@@ -46,6 +46,7 @@ Route.post('api/logs/add' ,'api/LogsController.add')
 
 //付款
 Route.post('api/payment/add', 'api/PaymentsController.add')
+Route.post('api/payment/all', 'api/PaymentsController.all')
 
 //redis
 Route.post('api/signup/send','api/OrdersController.send')

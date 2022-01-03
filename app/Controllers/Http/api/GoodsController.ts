@@ -2,8 +2,7 @@
 import Goods from "App/Models/Good"
 import RestResponse from "App/Common/RestResponse";
 import {HttpContextContract} from "@ioc:Adonis/Core/HttpContext";
-
-
+import Database from "@ioc:Adonis/Lucid/Database";
 
 export default class GoodsController {
 
@@ -16,18 +15,20 @@ export default class GoodsController {
   }
 
   //减少库存
-  public async sub({ request }: HttpContextContract ){
-    const gid =  request.input('gid')
-    try{
-      const good = await Goods.findOrFail(gid)
-      if(good.total<1){
-        return RestResponse.ERROR_SLEF("库存不足")
-      }
-      good.total =  good.total - 1
-      good.save()
+  public async sub(gid,paynum){
+    const trx = await Database.transaction()
+      const good = await Goods.findOrFail(gid,trx)
+        if(good.total<paynum){
+          return RestResponse.ERROR_SLEF("库存不足")
+        }
+      good.total =  good.total - paynum
+    try {
+      await good.save()
+      await trx.commit()
       return RestResponse.SUCCESS("","减少库存成功")
-    }catch (Error){
-      return RestResponse.DB_ERROR()
+    } catch (error) {
+      await trx.rollback()
+      return RestResponse.ERROR_SLEF(error)
     }
   }
 
@@ -57,7 +58,7 @@ export default class GoodsController {
     const pagesize =  request.input("pagesize")
     try{
       const good = await Goods.query().where("name","like",query+"%").paginate(pagenum,pagesize)
-      return RestResponse.SUCCESS({'goods':good},'查询成功')
+      return RestResponse.SUCCESS({'goods':good},'获取商品列表成功')
     }catch (Error){
       return RestResponse.DB_ERROR()
     }
@@ -76,7 +77,6 @@ export default class GoodsController {
     const good = await Goods.query().where("name","like","%"+name+"%")
     return good
   }
-
 }
 
 

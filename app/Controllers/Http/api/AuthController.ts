@@ -42,8 +42,6 @@ export default class AuthController {
     }
      catch (error) {
       return RestResponse.Login_ERROR()
-    }finally {
-      return RestResponse.ERROR()
     }
   }
 
@@ -54,9 +52,5 @@ export default class AuthController {
     }catch (Error){
       return RestResponse.ERROR_SLEF('退出登陆失败')
     }
-    finally {
-      return RestResponse.ERROR()
-    }
-
   }
 }
