@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="175dd477-73e8-489e-8562-db61a64449b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/api/AuthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/api/AuthController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/api/GoodsController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/api/GoodsController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/api/PaymentsController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/api/PaymentsController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Payment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Payment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/api/OrdersController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/api/OrdersController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/start/routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1676,7 +1673,7 @@
       <workItem from="1641005945425" duration="6339000" />
       <workItem from="1641024329798" duration="9697000" />
       <workItem from="1641086442647" duration="19311000" />
-      <workItem from="1641182781629" duration="16001000" />
+      <workItem from="1641182781629" duration="17546000" />
     </task>
     <servers />
   </component>

@@ -28,9 +28,9 @@ Route.get('/', async ({ view }) => {
 //商品
 Route.get('api/goods/:id', 'api/GoodsController.show').middleware("auth:api");
 Route.get('api/goods/', 'api/GoodsController.all'). as('shop.index').middleware("auth:api");
-Route.post('api/goods/show_by_name', 'api/GoodsController.show_by_name')
-Route.post('api/goods/add', 'api/GoodsController.add')
-Route.post('api/goods/sub', 'api/GoodsController.sub')
+Route.post('api/goods/show_by_name', 'api/GoodsController.show_by_name').middleware("auth:api");
+Route.post('api/goods/add', 'api/GoodsController.add').middleware("auth:api");
+Route.post('api/goods/sub', 'api/GoodsController.sub').middleware("auth:api");
 
 //用户
 Route.post('user/create','UsersController.create')
@@ -41,15 +41,16 @@ Route.post('api/login', 'api/AuthController.login').as('auth.login')
 Route.get('logout', 'api/AuthController.logout').as('auth.logout')
 
 //日志
-Route.post('api/logs/add' ,'api/LogsController.add')
+Route.post('api/logs/add' ,'api/LogsController.add').middleware("auth:api");
 
 
 //付款
-Route.post('api/payment/add', 'api/PaymentsController.add')
-Route.post('api/payment/all', 'api/PaymentsController.all')
+Route.post('api/payment/add', 'api/PaymentsController.add').middleware("auth:api");
+Route.post('api/payment/all', 'api/PaymentsController.all').middleware("auth:api");
 
 //redis
-Route.post('api/signup/send','api/OrdersController.send')
+Route.post('api/signup/send','api/OrdersController.send').middleware("auth:api");
+Route.post('api/signup/receive','api/OrdersController.receive')
 // Route.group(() => {
 // Route.post('api/register', 'api/AuthController.register').as('auth.register')
 // Route.get('login', 'api/AuthController.loginShow').as('auth.login.show')

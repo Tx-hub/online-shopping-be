@@ -10,11 +10,19 @@ export default class OrdersController {
   public async send({ request }: HttpContextContract) {
     const username = request.input('username')
     try{
-      await Redis.publish('cctv1', JSON.stringify({ username: username }))
+      await Redis.publish('cctv2', JSON.stringify({ username: username }))
       return RestResponse.SUCCESS({"username":username},'购买成功')
     }catch (Error){
       return RestResponse.REDIS_ERROR()
     }
+  }
+
+
+  //当下游用户接受时
+  public async receive() {
+    Redis.subscribe('cctv2', async (username: string) => {
+      console.log(username)
+    })
   }
 
 }
