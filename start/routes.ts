@@ -48,9 +48,11 @@ Route.post('api/logs/add' ,'api/LogsController.add').middleware("auth:api");
 Route.post('api/payment/add', 'api/PaymentsController.add').middleware("auth:api");
 Route.post('api/payment/all', 'api/PaymentsController.all').middleware("auth:api");
 
-//redis
+//websocket
 Route.post('api/signup/send','api/OrdersController.send').middleware("auth:api");
-Route.post('api/signup/receive','api/OrdersController.receive')
+// Route.post('api/signup/receive','api/OrdersController.receive')
+// Route.post('api/signup/receiver','api/OrdersController.receiver')
+Route.post('api/signup/server_register','api/OrdersController.server_register')
 // Route.group(() => {
 // Route.post('api/register', 'api/AuthController.register').as('auth.register')
 // Route.get('login', 'api/AuthController.loginShow').as('auth.login.show')
