@@ -1,10 +1,10 @@
-// import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
-
+import RestResponse from "App/Common/RestResponse";
 import {HttpContextContract} from "@ioc:Adonis/Core/HttpContext";
 import Payment from "App/Models/Payment";
 
 export default class PaymentsController {
-  // 付款
+
+  // 添加账单
   public async add({ request }: HttpContextContract) {
     const uid =  request.input("uid")
     const gid =  request.input("gid")
@@ -13,9 +13,9 @@ export default class PaymentsController {
     payment.gid = gid
     try{
       await Payment.create(payment)
-      return {'data':"添加成功",'status':200,'code':0}
+      return RestResponse.SUCCESS("","添加成功")
     }catch (error){
-      return {'data':"添加失败",'status':201,'code':1}
+      return RestResponse.DB_ERROR()
     }
   }
 
@@ -24,8 +24,14 @@ export default class PaymentsController {
     const uid =  request.input("uid")
     const pagenum =  request.input("pagenum")
     const pagesize =  request.input("pagesize")
-    const Log = await Payment.query().where(uid).paginate(pagenum,pagesize)
-    return {'Logs':Log,'status':200}
+    try{
+      const payment = await Payment.query().where(uid).paginate(pagenum,pagesize)
+      return RestResponse.SUCCESS({"payment":payment},"查询成功")
+    }catch (Error){
+      return RestResponse.DB_ERROR()
+    }
+
+
   }
 
 }
