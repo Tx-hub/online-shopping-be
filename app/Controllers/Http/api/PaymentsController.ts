@@ -3,7 +3,7 @@ import {HttpContextContract} from "@ioc:Adonis/Core/HttpContext";
 import Payment from "App/Models/Payment";
 import Database from "@ioc:Adonis/Lucid/Database";
 import goodsController from "App/Controllers/Http/api/GoodsController";
-
+import Redis from '@ioc:Adonis/Addons/Redis'
 
 export default class PaymentsController {
 
@@ -12,6 +12,7 @@ export default class PaymentsController {
     const uid = request.input("uid")
     const gid =  request.input("gid")
     const paynum =  request.input("paynum")
+    // Redis.setnx()
     const payment = new Payment()
     payment.uid = uid
     payment.gid = gid

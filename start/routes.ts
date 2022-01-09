@@ -55,7 +55,7 @@ Route.post('api/logs/add' ,'api/LogsController.add').middleware("auth:api");
 
 
 //付款
-Route.post('api/payment/add', 'api/PaymentsController.add').middleware("auth:api");
+Route.post('api/payment/add', 'api/PaymentsController.add')
 Route.post('api/payment/all', 'api/PaymentsController.all').middleware("auth:api");
 
 //websocket
