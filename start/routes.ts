@@ -20,6 +20,16 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
+// var sca = function() {
+//
+// export default class  service{
+//   public async receiver(text){
+//     server.connections.forEach((conn) => {
+//       conn.sendText(text);
+//     })
+//   }
+// }
+
 
 Route.get('/', async ({ view }) => {
   return view.render('welcome')

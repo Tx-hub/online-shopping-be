@@ -22,12 +22,14 @@
     "@adonisjs/redis": "^7.0.10",
     "@adonisjs/session": "^6.1.2",
     "@adonisjs/view": "^6.1.1",
+    "@types/socket.io": "^3.0.2",
     "luxon": "^2.2.0",
     "mysql": "^2.18.1",
     "nodejs-websocket": "^1.7.2",
     "phc-argon2": "^1.1.2",
     "proxy-addr": "^2.0.7",
     "reflect-metadata": "^0.1.13",
+    "socket.io": "^4.4.1",
     "source-map-support": "^0.5.21",
     "tcp-port-used": "^1.0.2"
   }

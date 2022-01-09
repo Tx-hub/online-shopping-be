@@ -19,3 +19,21 @@ sourceMapSupport.install({ handleUncaughtExceptions: false })
 new Ignitor(__dirname)
   .httpServer()
   .start()
+// console.log(1)
+// var ws = require('nodejs-websocket');
+// var server = ws.createServer()
+// var i = 0
+// console.log(i)
+// if(i==0){
+//   server.listen(3000)
+//   i++;
+// }
+
+// try{
+//   var ws = require('nodejs-websocket');
+//   var server = ws.createServer()
+//   server.listen(3000)
+// }catch (Error){
+//   console.log("111")
+// }
+
