@@ -1,26 +1,12 @@
-// import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Ws from 'App/Services/Ws'
 import {HttpContextContract} from "@ioc:Adonis/Core/HttpContext";
 import RestResponse from "App/Common/RestResponse";
-// import Redis from "@ioc:Adonis/Addons/Redis";
-// import service from "../../../../start/routes";
 
-// var tcpPortUsed = require('tcp-port-used');
 
 
 export default class OrdersController {
 
-  //当下游用户接受时
-  // public async server_register() {
-  //   tcpPortUsed.
-  //   tcpPortUsed.waitUntilFree(3000)
-  //     .then(function() {
-  //
-  //     }, function(err) {
-  //       console.log('Error:', err.message);
-  //     });
-  //
-  // }
+
 
   //当用户发起购买时
   public async send({ request }: HttpContextContract) {
