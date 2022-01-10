@@ -14,15 +14,14 @@ export default class OrdersController {
        setInterval(async (name)=>{
         const lockKey = 'tuxiao'
         const result = await Redis.setnx(lockKey, DateTime.now().toString())
-        Redis.expire(lockKey,10)
+        console.log("checking"+result)
         if(result == 0){
           await this.receiver({"username":name,"time":await Redis.get(lockKey)})
         }else{
-
           Redis.del(lockKey)
           return
         }
-      },1000,name)
+      },5000,name)
     }catch (e){
       return RestResponse.REDIS_ERROR()
     }
@@ -39,14 +38,16 @@ export default class OrdersController {
          this.check(username)
       }
       await Redis.setnx(lockKey, order_time)
-      // await Redis.publish('cctv4', JSON.stringify({ username: username }))
       await this.receiver({"username":username,"time":DateTime.now()})
       return RestResponse.SUCCESS({"username":username,"time":Date.now()},'购买成功')
     }catch (Error){
       return RestResponse.REDIS_ERROR()
     }
   }
-
+  public async  del(){
+    Redis.del('tuxiao')
+    console.log("del")
+  }
   //发送购买用户时
   public async receiver(text){
     Ws.io.emit('TEAM_NOTICE', { text })
